@@ -1,0 +1,290 @@
+{
+  "structure": {
+    "total_images": 10471,
+    "splits": {
+      "train": {
+        "total": 7534,
+        "classes": {
+          "Romper": 239,
+          "Tee": 302,
+          "Tank": 561,
+          "Sweatpants": 302,
+          "Cardigan": 433,
+          "Jacket": 425,
+          "Jumpsuit": 448,
+          "Blouse": 679,
+          "Skirt": 741,
+          "Jeans": 518,
+          "Sweater": 381,
+          "Blazer": 980,
+          "Dress": 676,
+          "Top": 374,
+          "Shorts": 475
+        }
+      },
+      "val": {
+        "total": 1891,
+        "classes": {
+          "Romper": 60,
+          "Tee": 76,
+          "Tank": 141,
+          "Sweatpants": 76,
+          "Cardigan": 109,
+          "Jacket": 107,
+          "Jumpsuit": 112,
+          "Blouse": 170,
+          "Skirt": 186,
+          "Jeans": 130,
+          "Sweater": 96,
+          "Blazer": 245,
+          "Dress": 170,
+          "Top": 94,
+          "Shorts": 119
+        }
+      },
+      "Test": {
+        "total": 1046,
+        "classes": {
+          "Romper": 37,
+          "Tee": 42,
+          "Tank": 66,
+          "Sweatpants": 41,
+          "Cardigan": 80,
+          "Jacket": 37,
+          "Jumpsuit": 67,
+          "Blouse": 125,
+          "Skirt": 92,
+          "Jeans": 85,
+          "Sweater": 45,
+          "Blazer": 191,
+          "Dress": 37,
+          "Top": 45,
+          "Shorts": 56
+        }
+      }
+    },
+    "class_distribution": {
+      "Romper": {
+        "total": 336,
+        "splits": {
+          "train": 239,
+          "val": 60,
+          "Test": 37
+        }
+      },
+      "Tee": {
+        "total": 420,
+        "splits": {
+          "train": 302,
+          "val": 76,
+          "Test": 42
+        }
+      },
+      "Tank": {
+        "total": 768,
+        "splits": {
+          "train": 561,
+          "val": 141,
+          "Test": 66
+        }
+      },
+      "Sweatpants": {
+        "total": 419,
+        "splits": {
+          "train": 302,
+          "val": 76,
+          "Test": 41
+        }
+      },
+      "Cardigan": {
+        "total": 622,
+        "splits": {
+          "train": 433,
+          "val": 109,
+          "Test": 80
+        }
+      },
+      "Jacket": {
+        "total": 569,
+        "splits": {
+          "train": 425,
+          "val": 107,
+          "Test": 37
+        }
+      },
+      "Jumpsuit": {
+        "total": 627,
+        "splits": {
+          "train": 448,
+          "val": 112,
+          "Test": 67
+        }
+      },
+      "Blouse": {
+        "total": 974,
+        "splits": {
+          "train": 679,
+          "val": 170,
+          "Test": 125
+        }
+      },
+      "Skirt": {
+        "total": 1019,
+        "splits": {
+          "train": 741,
+          "val": 186,
+          "Test": 92
+        }
+      },
+      "Jeans": {
+        "total": 733,
+        "splits": {
+          "train": 518,
+          "val": 130,
+          "Test": 85
+        }
+      },
+      "Sweater": {
+        "total": 522,
+        "splits": {
+          "train": 381,
+          "val": 96,
+          "Test": 45
+        }
+      },
+      "Blazer": {
+        "total": 1416,
+        "splits": {
+          "train": 980,
+          "val": 245,
+          "Test": 191
+        }
+      },
+      "Dress": {
+        "total": 883,
+        "splits": {
+          "train": 676,
+          "val": 170,
+          "Test": 37
+        }
+      },
+      "Top": {
+        "total": 513,
+        "splits": {
+          "train": 374,
+          "val": 94,
+          "Test": 45
+        }
+      },
+      "Shorts": {
+        "total": 650,
+        "splits": {
+          "train": 475,
+          "val": 119,
+          "Test": 56
+        }
+      }
+    },
+    "imbalance_ratio": 26.486486486486488,
+    "split_ratios": {
+      "train": 0.719511030465094,
+      "val": 0.1805940215834209,
+      "Test": 0.09989494795148506
+    },
+    "low_sample_classes": [
+      {
+        "class": "Romper",
+        "split": "Test",
+        "count": 37
+      },
+      {
+        "class": "Tee",
+        "split": "Test",
+        "count": 42
+      },
+      {
+        "class": "Sweatpants",
+        "split": "Test",
+        "count": 41
+      },
+      {
+        "class": "Jacket",
+        "split": "Test",
+        "count": 37
+      },
+      {
+        "class": "Sweater",
+        "split": "Test",
+        "count": 45
+      },
+      {
+        "class": "Dress",
+        "split": "Test",
+        "count": 37
+      },
+      {
+        "class": "Top",
+        "split": "Test",
+        "count": 45
+      }
+    ]
+  },
+  "image_quality": {
+    "statistics": {
+      "width": {
+        "min": 50,
+        "max": 301,
+        "mean": 233.23264253652945,
+        "std": 47.17812727452842
+      },
+      "height": {
+        "min": 70,
+        "max": 301,
+        "mean": 288.87957215165693,
+        "std": 29.56884835588993
+      },
+      "aspect_ratio": {
+        "min": 0.23333333333333334,
+        "max": 3.0927835051546393,
+        "mean": 0.8185172383529558,
+        "std": 0.2079584273507521
+      }
+    },
+    "formats": {
+      "JPEG": 10471
+    },
+    "color_modes": {
+      "RGB": 10471
+    },
+    "too_small_count": 43,
+    "too_large_count": 0,
+    "corrupted_count": 0,
+    "unusual_aspect_count": 16
+  },
+  "duplicates": {
+    "total_exact": 143,
+    "total_cross_split": 100,
+    "groups": 138
+  },
+  "issues": {
+    "blank_images": 0,
+    "nearly_blank": 14,
+    "very_dark": 4,
+    "very_bright": 142,
+    "low_contrast": 68,
+    "mostly_one_color": 26,
+    "noisy_images": 0
+  },
+  "health_score": "CRITICAL",
+  "recommendations": [
+    "CRITICAL: Remove 100 cross-split duplicates (data leakage!)",
+    "WARNING: High class imbalance (ratio: 26.5). Consider oversampling minority classes or using weighted loss.",
+    "WARNING: 7 class/split combinations have < 50 samples",
+    "WARNING: 43 images are smaller than 100x100 pixels",
+    "WARNING: 143 duplicate images found (excluding cross-split)",
+    "Consider resizing all images to a consistent size (e.g., 224x224 or 256x256)",
+    "Apply data augmentation (rotation, flip, color jitter) to increase dataset diversity",
+    "Verify that class labels are accurate by manual inspection of edge cases",
+    "Consider using pretrained models (transfer learning) given the dataset size"
+  ]
+}

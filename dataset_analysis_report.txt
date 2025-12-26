@@ -1,0 +1,197 @@
+======================================================================
+DATASET QUALITY ANALYSIS REPORT
+Clothing Recognition Model Dataset
+Generated: 2025-12-26 23:45:33
+======================================================================
+
+======================================================================
+OVERALL HEALTH SCORE: CRITICAL
+======================================================================
+
+----------------------------------------------------------------------
+1. DATASET STRUCTURE & BALANCE
+----------------------------------------------------------------------
+
+Total Images: 10471
+
+Split Distribution:
+  - train: 7534 images (72.0%)
+  - val: 1891 images (18.1%)
+  - Test: 1046 images (10.0%)
+
+Class Imbalance Ratio: 26.49
+
+Images per Class (Train/Val/Test):
+  Romper: 239/60/37 (Total: 336)
+  Tee: 302/76/42 (Total: 420)
+  Tank: 561/141/66 (Total: 768)
+  Sweatpants: 302/76/41 (Total: 419)
+  Cardigan: 433/109/80 (Total: 622)
+  Jacket: 425/107/37 (Total: 569)
+  Jumpsuit: 448/112/67 (Total: 627)
+  Blouse: 679/170/125 (Total: 974)
+  Skirt: 741/186/92 (Total: 1019)
+  Jeans: 518/130/85 (Total: 733)
+  Sweater: 381/96/45 (Total: 522)
+  Blazer: 980/245/191 (Total: 1416)
+  Dress: 676/170/37 (Total: 883)
+  Top: 374/94/45 (Total: 513)
+  Shorts: 475/119/56 (Total: 650)
+
+Low Sample Warning (< 50 images):
+  - Romper in Test: 37 images
+  - Tee in Test: 42 images
+  - Sweatpants in Test: 41 images
+  - Jacket in Test: 37 images
+  - Sweater in Test: 45 images
+  - Dress in Test: 37 images
+  - Top in Test: 45 images
+
+----------------------------------------------------------------------
+2. IMAGE QUALITY ANALYSIS
+----------------------------------------------------------------------
+
+Resolution Statistics:
+  Width:  min=50, max=301, mean=233.2, std=47.2
+  Height: min=70, max=301, mean=288.9, std=29.6
+  Aspect: min=0.23, max=3.09, mean=0.82
+
+Image Formats: {'JPEG': 10471}
+Color Modes: {'RGB': 10471}
+
+Size Issues:
+  - Too small (<100px): 43
+  - Too large (>2000px): 0
+  - Unusual aspect ratio: 16
+  - Corrupted/unreadable: 0
+
+----------------------------------------------------------------------
+3. DUPLICATE DETECTION
+----------------------------------------------------------------------
+
+Exact Duplicates: 143
+Duplicate Groups: 138
+Cross-Split Duplicates (DATA LEAKAGE!): 100
+
+Cross-Split Duplicate Details:
+  - Found in splits: ['val', 'train']
+    /home/user/Clothes_recognition_Model/dataset/train/Romper/img_00000006 (12).jpg
+    /home/user/Clothes_recognition_Model/dataset/val/Romper/img_00000025 (8).jpg
+  - Found in splits: ['val', 'train']
+    /home/user/Clothes_recognition_Model/dataset/train/Tee/img_00000018.jpg
+    /home/user/Clothes_recognition_Model/dataset/val/Blouse/img_00000075 (2).jpg
+  - Found in splits: ['Test', 'train']
+    /home/user/Clothes_recognition_Model/dataset/train/Jacket/img_00000071.jpg
+    /home/user/Clothes_recognition_Model/dataset/Test/Jacket/img_00000071.jpg
+  - Found in splits: ['Test', 'train']
+    /home/user/Clothes_recognition_Model/dataset/train/Jacket/img_00000061.jpg
+    /home/user/Clothes_recognition_Model/dataset/Test/Jacket/img_00000061.jpg
+  - Found in splits: ['Test', 'train']
+    /home/user/Clothes_recognition_Model/dataset/train/Jacket/img_00000059 (3).jpg
+    /home/user/Clothes_recognition_Model/dataset/Test/Jacket/img_00000059 (3).jpg
+  - Found in splits: ['Test', 'train']
+    /home/user/Clothes_recognition_Model/dataset/train/Jacket/img_00000062.jpg
+    /home/user/Clothes_recognition_Model/dataset/Test/Jacket/img_00000062.jpg
+  - Found in splits: ['Test', 'train']
+    /home/user/Clothes_recognition_Model/dataset/train/Jacket/img_00000063 (3).jpg
+    /home/user/Clothes_recognition_Model/dataset/Test/Jacket/img_00000063 (3).jpg
+  - Found in splits: ['Test', 'train']
+    /home/user/Clothes_recognition_Model/dataset/train/Jacket/img_00000063.jpg
+    /home/user/Clothes_recognition_Model/dataset/Test/Jacket/img_00000063.jpg
+  - Found in splits: ['Test', 'train']
+    /home/user/Clothes_recognition_Model/dataset/train/Jacket/img_00000066 (2).jpg
+    /home/user/Clothes_recognition_Model/dataset/Test/Jacket/img_00000066 (2).jpg
+  - Found in splits: ['Test', 'train']
+    /home/user/Clothes_recognition_Model/dataset/train/Jacket/img_00000064 (2).jpg
+    /home/user/Clothes_recognition_Model/dataset/Test/Jacket/img_00000064 (2).jpg
+
+----------------------------------------------------------------------
+4. POTENTIAL ISSUES
+----------------------------------------------------------------------
+
+Blank images: 0
+Nearly blank: 14
+Very dark: 4
+Very bright: 142
+Low contrast: 68
+Mostly one color: 26
+
+Sample Problematic Files:
+  [nearly_blank] /home/user/Clothes_recognition_Model/dataset/train/Romper/img_00000007 (3).jpg
+  [nearly_blank] /home/user/Clothes_recognition_Model/dataset/train/Sweatpants/img_00000020 (11).jpg
+  [nearly_blank] /home/user/Clothes_recognition_Model/dataset/train/Jumpsuit/img_00000044 (4).jpg
+  [nearly_blank] /home/user/Clothes_recognition_Model/dataset/train/Blouse/img_00000017.jpg
+  [nearly_blank] /home/user/Clothes_recognition_Model/dataset/train/Skirt/img_00000016 (8).jpg
+  [very_dark] /home/user/Clothes_recognition_Model/dataset/train/Sweatpants/img_00000008 (4).jpg
+  [very_dark] /home/user/Clothes_recognition_Model/dataset/train/Blazer/img_00000006.jpg
+  [very_dark] /home/user/Clothes_recognition_Model/dataset/val/Cardigan/img_00000034 (4).jpg
+  [very_dark] /home/user/Clothes_recognition_Model/dataset/Test/Cardigan/img_00000052.jpg
+  [very_bright] /home/user/Clothes_recognition_Model/dataset/train/Romper/img_00000003 (2).jpg
+  [very_bright] /home/user/Clothes_recognition_Model/dataset/train/Romper/img_00000013 (4).jpg
+  [very_bright] /home/user/Clothes_recognition_Model/dataset/train/Romper/img_00000026 (4).jpg
+  [very_bright] /home/user/Clothes_recognition_Model/dataset/train/Romper/img_00000021 (6).jpg
+  [very_bright] /home/user/Clothes_recognition_Model/dataset/train/Romper/img_00000021 (2).jpg
+  [low_contrast] /home/user/Clothes_recognition_Model/dataset/train/Romper/img_00000001 (12).jpg
+  [low_contrast] /home/user/Clothes_recognition_Model/dataset/train/Romper/img_00000007 (3).jpg
+  [low_contrast] /home/user/Clothes_recognition_Model/dataset/train/Tee/img_00000017 (6).jpg
+  [low_contrast] /home/user/Clothes_recognition_Model/dataset/train/Tee/img_00000010 (9).jpg
+  [low_contrast] /home/user/Clothes_recognition_Model/dataset/train/Tank/img_00000045 (5).jpg
+  [mostly_one_color] /home/user/Clothes_recognition_Model/dataset/train/Romper/img_00000007 (3).jpg
+
+----------------------------------------------------------------------
+5. CLASS CONFUSION ANALYSIS
+----------------------------------------------------------------------
+
+Potentially Confusing Class Groups:
+  - Top, Tee, Blouse, Tank
+    Reason: All are upper body garments with similar silhouettes
+  - Sweater, Cardigan, Sweatpants
+    Reason: Similar textures and casual style
+  - Jeans, Sweatpants, Shorts
+    Reason: All are bottom wear, may have similar patterns
+  - Dress, Jumpsuit, Romper
+    Reason: Full-body garments that may look similar
+  - Jacket, Blazer, Cardigan
+    Reason: All are outerwear/layering pieces
+
+----------------------------------------------------------------------
+6. RECOMMENDATIONS
+----------------------------------------------------------------------
+
+1. CRITICAL: Remove 100 cross-split duplicates (data leakage!)
+
+2. WARNING: High class imbalance (ratio: 26.5). Consider oversampling minority classes or using weighted loss.
+
+3. WARNING: 7 class/split combinations have < 50 samples
+
+4. WARNING: 43 images are smaller than 100x100 pixels
+
+5. WARNING: 143 duplicate images found (excluding cross-split)
+
+6. Consider resizing all images to a consistent size (e.g., 224x224 or 256x256)
+
+7. Apply data augmentation (rotation, flip, color jitter) to increase dataset diversity
+
+8. Verify that class labels are accurate by manual inspection of edge cases
+
+9. Consider using pretrained models (transfer learning) given the dataset size
+
+======================================================================
+SUMMARY
+======================================================================
+
+Dataset Health Score: CRITICAL
+Total Images: 10471
+Classes: 15
+Splits: train, val, Test
+
+Key Metrics:
+  - Train/Val/Test ratio: 72.0% / 18.1% / 10.0%
+  - Class imbalance ratio: 26.49
+  - Corrupted images: 0
+  - Cross-split duplicates: 100
+  - Total quality issues: 254
+
+======================================================================
+END OF REPORT
+======================================================================
